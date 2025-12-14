@@ -5,15 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Davenport Provincial Liberal Association</title>
 
-  <!-- NOTE:
-       Replace logo.png and any fonts with the official OLP / riding assets
-       you are authorized to use. This file is structure-first on purpose.
-  -->
-
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif; /* swap for official party font */
+      font-family: Arial, Helvetica, sans-serif;
       color: #111;
       background: #ffffff;
     }
@@ -54,6 +49,48 @@
       text-decoration: underline;
     }
 
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      margin: 0;
+      padding: 8px 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      min-width: 180px;
+      z-index: 100;
+    }
+
+    nav .dropdown-menu li a {
+      display: block;
+      padding: 8px 16px;
+      color: #111;
+      text-decoration: none;
+    }
+
+    nav .dropdown-menu li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    nav li.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
     /* ===== Main ===== */
     main {
       max-width: 960px;
@@ -61,76 +98,30 @@
       padding: 48px 24px;
     }
 
-.hero {
-  text-align: center;
-  margin-bottom: 48px;
-}
+    .hero {
+      text-align: center;
+      margin-bottom: 48px;
+    }
 
-.hero-img {
-  width: 100%;
-  max-width: 600px;  /* adjust as needed */
-  height: auto;
-  border-radius: 8px; /* subtle rounding */
-  margin-bottom: 24px;
-}
+    .hero-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
 
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
 
-.hero p {
-  font-size: 1.05rem;
-  color: #444;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-    nav ul {
-  list-style: none;
-  display: flex;
-  gap: 18px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-nav li {
-  position: relative;
-}
-
-nav .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  list-style: none;
-  margin: 0;
-  padding: 8px 0;
-  background: #fff;
-  border: 1px solid #ddd;
-  min-width: 180px;
-  z-index: 100;
-}
-
-nav .dropdown-menu li {
-  padding: 0;
-}
-
-nav .dropdown-menu li a {
-  display: block;
-  padding: 8px 16px;
-  color: #111;
-  text-decoration: none;
-}
-
-nav .dropdown-menu li a:hover {
-  background-color: #f0f0f0;
-}
-
-nav li.dropdown:hover .dropdown-menu {
-  display: block;
-}
+    .hero p {
+      font-size: 1.05rem;
+      color: #444;
+      max-width: 700px;
+      margin: 0 auto;
+    }
 
     .content-section {
       text-align: center;
@@ -235,14 +226,13 @@ nav li.dropdown:hover .dropdown-menu {
         <li><a href="volunteer.html">Volunteer</a></li>
         <li><a href="https://ontarioliberal.ca/become-a-member/" target="_blank" rel="noopener">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://ontarioliberal.ca/donate/" target="_blank" rel="noopener">Donate</a></li>
 
         <li class="dropdown">
-  <a href="#">Donate &#9662;</a> <!-- ▼ symbol for dropdown -->
-  <ul class="dropdown-menu">
-    <li><a href="https://ontarioliberal.ca/donate/?utm_source=ontarioliberal-ca&utm-medium=pla-toplinks&utm_content=pla-19&pcd=pla-page-19&pla=19" target="_blank" rel="noopener">Davenport</a></li>
-    <li><a href="https://ontarioliberal.ca/donate/future-fund/?utm_source=ontarioliberal-ca&utm-medium=pla-toplinks&utm_content=pla-19&pcd=pla-page-19&ffpla=19" target="_blank" rel="noopener">Monthly</a></li>
-  </ul>
+          <a href="#">Donate &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://ontarioliberal.ca/donate/?utm_source=ontarioliberal-ca&utm-medium=pla-toplinks&utm_content=pla-19&pcd=pla-page-19&pla=19" target="_blank" rel="noopener">Davenport</a></li>
+            <li><a href="https://ontarioliberal.ca/donate/future-fund/?utm_source=ontarioliberal-ca&utm-medium=pla-toplinks&utm_content=pla-19&pcd=pla-page-19&ffpla=19" target="_blank" rel="noopener">Monthly</a></li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -250,12 +240,12 @@ nav li.dropdown:hover .dropdown-menu {
 
   <!-- ===== Main Content ===== -->
   <main>
-  <section class="hero">
-    <img src="davenport.jpg" alt="Davenport riding" class="hero-img">
-    <h1>Building a Better Davenport</h1>
-    <p>The Davenport Provincial Liberal Association is a volunteer‑driven organization
-       working to support Liberal values and engage our community.</p>
-  </section>
+    <section class="hero">
+      <img src="davenport.jpg" alt="Davenport riding" class="hero-img">
+      <h1>Building a Better Davenport</h1>
+      <p>The Davenport Provincial Liberal Association is a volunteer-driven organization
+         working to support Liberal values and engage our community.</p>
+    </section>
 
     <section class="content-section">
       <h2>News & Updates</h2>
@@ -294,6 +284,3 @@ nav li.dropdown:hover .dropdown-menu {
 
 </body>
 </html>
-
-
-
