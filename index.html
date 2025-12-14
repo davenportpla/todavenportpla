@@ -44,14 +44,6 @@
       line-height: 1.2;
     }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 18px;
-      margin: 0;
-      padding: 0;
-    }
-
     nav a {
       text-decoration: none;
       color: #111;
@@ -92,6 +84,52 @@
   color: #444;
   max-width: 700px;
   margin: 0 auto;
+}
+
+    nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+nav li {
+  position: relative;
+}
+
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  min-width: 180px;
+  z-index: 100;
+}
+
+nav .dropdown-menu li {
+  padding: 0;
+}
+
+nav .dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  color: #111;
+  text-decoration: none;
+}
+
+nav .dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+nav li.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
     .content-section {
@@ -198,6 +236,14 @@
         <li><a href="https://ontarioliberal.ca/become-a-member/" target="_blank" rel="noopener">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="https://ontarioliberal.ca/donate/" target="_blank" rel="noopener">Donate</a></li>
+
+        <li class="dropdown">
+  <a href="#">Donate &#9662;</a> <!-- ▼ symbol for dropdown -->
+  <ul class="dropdown-menu">
+    <li><a href="https://ontarioliberal.ca/donate/?utm_source=ontarioliberal-ca&utm-medium=pla-toplinks&utm_content=pla-19&pcd=pla-page-19&pla=19" target="_blank" rel="noopener">Davenport</a></li>
+    <li><a href="https://ontarioliberal.ca/donate/future-fund/?utm_source=ontarioliberal-ca&utm-medium=pla-toplinks&utm_content=pla-19&pcd=pla-page-19&ffpla=19" target="_blank" rel="noopener">Monthly</a></li>
+  </ul>
+        </li>
       </ul>
     </nav>
   </header>
@@ -248,5 +294,6 @@
 
 </body>
 </html>
+
 
 
