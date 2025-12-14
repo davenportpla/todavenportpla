@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davenport Provincial Liberal Association</title>
+
+  <!-- NOTE:
+       Replace logo.png and any fonts with the official OLP / riding assets
+       you are authorized to use. This file is structure-first on purpose.
+  -->
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif; /* swap for official party font */
+      color: #111;
+      background: #ffffff;
+    }
+
+    /* ===== Header ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      height: 48px;
+      width: auto;
+    }
+
+    .brand-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Main ===== */
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    .content-section {
+      text-align: center;
+      padding: 32px 0;
+    }
+
+    .content-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .content-section p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      border-top: 1px solid #e5e5e5;
+      margin-top: 64px;
+      padding: 32px 24px;
+    }
+
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    .footer-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      font-size: 0.9rem;
+    }
+
+    .footer-nav a {
+      text-decoration: none;
+      color: #111;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-copy {
+      width: 100%;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 16px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="brand">
+      <img src="logo.png" alt="Ontario Liberal Party Logo" />
+      <div class="brand-name">
+        Davenport<br />
+        Provincial Liberal Association
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="https://ontarioliberal.ca/join/" target="_blank" rel="noopener">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://ontarioliberal.ca/donate/" target="_blank" rel="noopener">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <section class="hero">
+      <h1>Building a Better Davenport</h1>
+      <p>The Davenport Provincial Liberal Association is a volunteer‑driven organization
+         working to support Liberal values and engage our community.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>News & Updates</h2>
+      <p><em>Coming soon…!</em></p>
+    </section>
+
+    <section class="content-section">
+      <h2>Contact the Davenport PLA President</h2>
+      <p>If you would like to get in touch, volunteer, or learn more about the association,
+         please contact us using the information on our contact page.</p>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Ontario Liberal Party Logo" />
+      </div>
+
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://ontarioliberal.ca" target="_blank" rel="noopener">Ontario Liberal Party</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-copy">
+        &copy; 2026 Davenport Provincial Liberal Association
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
